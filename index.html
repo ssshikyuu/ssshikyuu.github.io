@@ -4,7 +4,7 @@
     <title>随机数图片</title>
   </head>
   <body>
-    <img id="randomImg" src="./img/初始.png" alt="随机数" style="width:100%" onclick="generateRandomNumber()">
+    <img id="randomImg" src="./img/初始.jpg" alt="随机数" style="width:100%" onclick="generateRandomNumber()">
     <script>
 	 var data=1
      var newrandomNumber=1
@@ -13,17 +13,17 @@
         // 生成一个随机数
 		if(data==1){
 		 var randomNumber = Math.floor(Math.random() * 12) + 1;
-		 var filename = "./img/"+ randomNumber + ".png";
+		 var filename = "./img/"+ randomNumber + ".jpg";
 		}else{
 		 var randomNumber = Math.floor(Math.random() * 12) + 1;
-		 var filename = "./img/2-"+ randomNumber + ".png";
+		 var filename = "./img/2-"+ randomNumber + ".jpg";
 		}
         console.log(typeof randomNumber,data,randomNumber)
 		var img = document.getElementById("randomImg");
 		if(data==1){
 		console.log(newrandomNumber)
 		 if(newrandomNumber==11||newrandomNumber==12){
-		  img.src="./img/触发(接).png"
+		  img.src="./img/触发(接).jpg"
 		  data=2
 		 }else{
 		   img.src = filename;
@@ -31,7 +31,7 @@
 		 }
 		}else{
 		  if(newrandomNumber==12){
-		  img.src="./img/2-触发（接）.png"
+		  img.src="./img/2-触发（接）.jpg"
 		  alert("成功喝到奶茶")
                                   window.location.reload();
 		  }else{
